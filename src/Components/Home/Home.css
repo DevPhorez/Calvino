@@ -1,0 +1,38 @@
+.bg-home {
+    background-image: url("../../../public/Images/bg-home.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 735px;
+    overflow-x: hidden;
+}
+
+.our-business {
+    margin-top: 5rem;
+    max-width: 430px;
+    line-height: 5;
+}
+
+.our-business span {
+    border: 1px solid #8252fa;
+    padding: .3rem .5rem;
+    border-radius: 150px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.our-business h1 {
+    font-family: Nunito, sans-serif !important;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 11px;
+}
+
+.our-business p {
+    color: rgb(25, 40, 57);
+    margin-bottom: 48px;
+    padding-right: 0;
+    font-size: 20px;
+}

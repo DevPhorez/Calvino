@@ -2,7 +2,7 @@ import './Navbar.css'
 
 function Navbar () {
 	return (
-		<nav className="navbar navbar-expand-lg bg-transparent px-4 py-3">
+		<nav className="navbar navbar-expand-lg bg-transparent px-4 py-3 fixed-top">
 			<div className="container-fluid">
 				<span className="navbar-brand pointer">
 					<img src="/Images/logo.png" alt=""/>
@@ -20,11 +20,11 @@ function Navbar () {
 							<div className='active'></div>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" aria-current="page" href="#">About</a>
+							<a className="nav-link" aria-current="page" href="#">Services</a>
 							<div></div>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" aria-current="page" href="#">Services</a>
+							<a className="nav-link" aria-current="page" href="#">About</a>
 							<div></div>
 						</li>
 						<li className="nav-item">
