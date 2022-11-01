@@ -1,0 +1,17 @@
+.header-items li div {
+    transition: .3s;
+    border-bottom: 3px solid #8252fa;
+    width: 0;
+}
+
+.header-items li:not(:last-child) {
+    margin-right: 2.5rem;
+}
+
+.header-items li:first-child {
+    margin-left: 2.3rem;
+}
+
+.header-items li:hover div, .active {
+    width: 100% !important;
+}
