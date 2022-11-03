@@ -89,3 +89,14 @@ p {
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
 }
+
+.linear-button {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    padding: 1rem;
+}
+
+.linear-button div {
+    margin-top: 10px;
+}

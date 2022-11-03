@@ -7,7 +7,7 @@ function Services () {
 		<section className='position-relative' style={ { paddingBottom: 120 } }>
 			<div className="container">
 				<div className="row justify-content-center text-center">
-					<div className='col-xl-5 col-md-10 col-lg-8 services-title'>
+					<div className='col-xl-5 col-md-10 col-lg-8 section-title'>
 						<p className="text-primary">
 							OUR SERVICES
 						</p>

@@ -5,6 +5,7 @@ import Services from "./Components/Services/Services";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import About from "./Components/About/About";
 
 function App() {
 	
@@ -23,6 +24,7 @@ function App() {
 		    <Navbar />
 		    <Home />
 		    <Services />
+		    <About />
 	    </>
     );
 }

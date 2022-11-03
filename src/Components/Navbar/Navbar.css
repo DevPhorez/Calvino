@@ -1,4 +1,4 @@
-.header-items li div {
+.header-items li div, .linear-button div {
     transition: .3s;
     border-bottom: 3px solid #8252fa;
     width: 0;
@@ -12,6 +12,6 @@
     margin-left: 2.3rem;
 }
 
-.header-items li:hover div, .active {
+.header-items li:hover div, .active, .linear-button:hover div {
     width: 100% !important;
 }
