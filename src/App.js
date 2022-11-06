@@ -6,6 +6,7 @@ import Services from "./Components/Services/Services";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import About from "./Components/About/About";
+import Counter from "./Components/About/Counter";
 
 function App() {
 	
@@ -25,6 +26,7 @@ function App() {
 		    <Home />
 		    <Services />
 		    <About />
+		    <Counter />
 	    </>
     );
 }

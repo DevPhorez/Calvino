@@ -100,3 +100,20 @@ p {
 .linear-button div {
     margin-top: 10px;
 }
+
+.glass-parent {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /*border: 1px solid rgba(255, 255, 255, 1);*/
+    border-radius: 16px;
+    overflow: hidden !important;
+    position: relative;
+}
+
+.glass {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.36);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 100% !important;
+    height: 100% !important;
+}
