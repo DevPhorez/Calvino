@@ -7,6 +7,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import About from "./Components/About/About";
 import Counter from "./Components/About/Counter";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 function App() {
 	
@@ -27,6 +28,7 @@ function App() {
 		    <Services />
 		    <About />
 		    <Counter />
+		    <ScrollToTop />
 	    </>
     );
 }

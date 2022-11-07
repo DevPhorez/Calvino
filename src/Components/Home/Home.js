@@ -6,7 +6,7 @@ function Home () {
 		<div className="container-fluid p-0 bg-home">
 			<div className="row">
 				<div className="col-6">
-					<div className='our-business mx-auto'>
+					<div className='our-business button-parent mx-auto'>
 						<span className='text-primary'>Digital Marketing Expert</span>
 						<h1 className='mb-3'>
 							We bring you new customers
