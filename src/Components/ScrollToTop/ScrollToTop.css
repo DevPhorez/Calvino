@@ -14,3 +14,13 @@
 .scroll-to-top button:hover a {
     color: #8252fa !important;
 }
+
+.scroll-to-top-animation {
+    animation-name: scroll-to-top-animation;
+    animation-duration: 1s;
+}
+
+@keyframes scroll-to-top-animation {
+    from { opacity: 0 }
+    to { opacity: 100 }
+}
