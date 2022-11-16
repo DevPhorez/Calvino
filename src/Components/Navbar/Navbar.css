@@ -1,7 +1,17 @@
+.header-items li {
+    position: relative;
+}
+
 .header-items li div, .linear-button div {
     transition: .3s;
     border-bottom: 3px solid #8252fa;
     width: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.mb--25 {
+    bottom: -25px !important;
 }
 
 .header-items li:not(:last-child) {
@@ -14,4 +24,15 @@
 
 .header-items li:hover div, .active, .linear-button:hover div {
     width: 100% !important;
+}
+
+.navbar-animation {
+    animation-name: navbar-animation;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navbar-animation {
+    from { background: transparent; top: -80px }
+    to { background: white; top: 0 }
 }
