@@ -1,0 +1,14 @@
+.Pricing {
+    width: 100% !important;
+    height: 100vh !important;
+    position: relative !important;
+}
+
+.pricing-particle {
+    opacity: 25;
+    position: absolute !important;
+    top: 0;
+}
+
+
+

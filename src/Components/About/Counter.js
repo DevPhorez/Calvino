@@ -4,7 +4,7 @@ import CountUp from 'react-countup';
 function Counter () {
 	return (
 		<div style={ { backgroundImage: '/Images/circle-bg.webp' } }>
-			<div className="container">
+			<div className="container mb-5 pb-5">
 				<div className="row">
 					<div className="col-12 col-md-4 text-center" data-aos='fade-up'>
 						<div className="glass-parent">
