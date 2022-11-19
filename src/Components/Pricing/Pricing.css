@@ -1,14 +1,49 @@
 .Pricing {
     width: 100% !important;
-    height: 100vh !important;
     position: relative !important;
+    /*overflow-x: hidden !important;*/
 }
 
 .pricing-particle {
-    opacity: 25;
     position: absolute !important;
     top: 0;
 }
 
+
+
+/* card css */
+
+.card-icon {
+    background: #fff;
+    display: flex;
+    margin-bottom: 0px;
+    padding: 20px;
+    width: 78px;
+    height: 78px;
+    border-radius: 50px;
+    box-shadow: 0px 15px 25px rgb(0 4 74 / 4%);
+    margin-bottom: 4px;
+}
+
+.card-icon img {
+    filter: invert(48%) sepia(87%) saturate(5510%) hue-rotate(242deg) brightness(99%) contrast(98%);
+}
+
+.card-icon + p {
+    margin-bottom: 4px;
+}
+
+.plan-title {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.options { 
+    text-align: center;
+}
+
+.options p {
+    line-height: 30px;
+}
 
 

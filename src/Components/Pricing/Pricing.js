@@ -1,9 +1,26 @@
+import React from 'react'
+
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
 import './Pricing.css'
+import Card from "./Card/Card";
 
 function Pricing () {
+	
+	const [width, setWidth] = React.useState(window.innerWidth - 20)
+	const [height, setHeight] = React.useState(0)
+	
+	const pricing = React.useRef(null)
+	
+	React.useEffect(() => {
+		setHeight(pricing.current.clientHeight)
+	})
+	
+	function ChangeHeight () {
+		console.log(pricing.current.style.height)
+	}
+	
 	const particlesInit = async (main) => {
 		await loadFull(main);
 	};
@@ -113,15 +130,19 @@ function Pricing () {
 		},
 		"retina_detect": true,
 		style: {
-			width: '1349px',
-			height: '100vh',
+			width: `${width}px`,
+			height: `${height}px`,
 			position: 'absolute',
 		}
 	}
 	
+	window.addEventListener('resize', () => {
+		setWidth(window.innerWidth - 20)
+		ChangeHeight()
+	})
 	
 	return (
-		<section className="Pricing" style={ { paddingTop: '6rem', background: '#f2f2f2' } }>
+		<section ref={pricing} className="Pricing" style={ { paddingTop: '6rem', background: '#f2f2f2' } }>
 			<Particles
 				className='pricing-particle'
 				id="pricing-particle"
@@ -129,7 +150,19 @@ function Pricing () {
 				
 				options={config}
 			/>
-			
+			<div className="container">
+				<div className="row">
+					<div className="col-12 col-lg-4 mb-5">
+						<Card icon={'basic.svg'} title={'Basic'} guid={'For The Individuals'} />
+					</div>
+					<div className="col-12 col-lg-4 mb-5">
+						<Card icon={'normal.svg'} title={'Normal'} guid={'For Small Company'} />
+					</div>
+					<div className="col-12 col-lg-4 mb-5">
+						<Card icon={'Pro.svg'} title={'Pro'} guid={'For Large Company'} />
+					</div>
+				</div>
+			</div>
 		</section>
 	);
 }
