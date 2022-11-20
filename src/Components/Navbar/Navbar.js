@@ -1,11 +1,15 @@
 import './Navbar.css'
 import * as React from "react";
 
-function Navbar () {
+function Navbar({ modalSetOpen, modalSetActive }) {
 	
 	// true means navbar has background color
 	const [status, setStatus] = React.useState(false)
 	
+	//modal 
+	const handleOpen = () => modalSetOpen(true);
+
+
 	const navbar = React.useRef()
 	
 	function ToggleStatus () {
@@ -65,11 +69,11 @@ function Navbar () {
 						</li>
 					</ul>
 					<ul className="navbar-nav header-items me-auto mb-2 mb-lg-0">
-						<li className="nav-item button me-1">
-							<a className="nav-link" aria-current="page" href="#">Sign In</a>
+						<li className="nav-item button me-1" onClick={() => { handleOpen(); modalSetActive('signup') }}>
+							<a className="nav-link" aria-current="page" href="#">Sign Up</a>
 						</li>
-						<li className="nav-item button">
-							<a className="nav-link" aria-current="page" href="#">Log In</a>
+						<li className="nav-item button" onClick={() => { handleOpen(); modalSetActive('signin') } }>
+							<a className="nav-link" aria-current="page" href="#">Sign In</a>
 						</li>
 					</ul>
 				</div>

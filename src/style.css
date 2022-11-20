@@ -98,7 +98,8 @@ p {
     border: none;
     background: transparent;
     font-size: 20px;
-    padding: 1rem;
+    margin: 1rem 1rem 0;
+    padding-bottom: 1rem;
 }
 
 .linear-button div {
@@ -120,4 +121,8 @@ p {
     -webkit-backdrop-filter: blur(10px);
     width: 100% !important;
     height: 100% !important;
+}
+
+.no-hover:hover {
+    color: unset !important
 }

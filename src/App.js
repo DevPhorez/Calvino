@@ -9,9 +9,14 @@ import About from "./Components/About/About";
 import Counter from "./Components/About/Counter";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import Pricing from "./Components/Pricing/Pricing";
+import Auth from "./Components/Auth/Auth";
 
 function App() {
 	
+	const [open, setOpen] = React.useState(false);
+	const [active, setActive] = React.useState("signin");
+
+
 	React.useEffect(() => {
 		AOS.init(
 			{
@@ -24,12 +29,13 @@ function App() {
 	
     return (
 	    <>
-		    <Navbar />
+		    <Navbar modalSetOpen={setOpen} modalSetActive={setActive} />
 		    <Home />
 		    <Services />
 		    <About />
 		    <Counter />
 		    <Pricing />
+			<Auth open={open} setOpen={setOpen} active={active} setActive={setActive} />
 		    <ScrollToTop />
 	    </>
     );

@@ -18,7 +18,7 @@ function About () {
 							<br/>
 							We’re out to create purposeful spaces that balance art and creativity with science and strategy.
 						</p>
-						<button className="linear-button pointer">
+						<button className="linear-button pointer position-relative">
 							Explore More
 							<div></div>
 						</button>

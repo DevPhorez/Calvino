@@ -6,7 +6,7 @@ function Counter () {
 		<div style={ { backgroundImage: '/Images/circle-bg.webp' } }>
 			<div className="container mb-5 pb-5">
 				<div className="row">
-					<div className="col-12 col-md-4 text-center" data-aos='fade-up'>
+					<div className="col-12 col-md-4 text-center mb-4" data-aos='fade-up'>
 						<div className="glass-parent">
 							<div className='position-absolute rounded-circle' style={ { height: 85, width: 85, backgroundImage: 'linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)'
 							} }></div>
@@ -28,7 +28,7 @@ function Counter () {
 							</div>
 						</div>
 					</div>
-					<div className="col-12 col-md-4 text-center" data-aos='fade-up' data-aos-delay={600}>
+					<div className="col-12 col-md-4 text-center mb-4" data-aos='fade-up' data-aos-delay={600}>
 						<div className="glass-parent">
 							<div className='position-absolute rounded-circle' style={ { height: 85, width: 85, left: '80%', top: '40%', backgroundImage: 'linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)'
 							} }></div>
