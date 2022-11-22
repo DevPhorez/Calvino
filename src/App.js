@@ -10,6 +10,7 @@ import Counter from "./Components/About/Counter";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import Pricing from "./Components/Pricing/Pricing";
 import Auth from "./Components/Auth/Auth";
+import WhyUs from './Components/Why Us/WhyUs';
 
 function App() {
 	
@@ -35,6 +36,7 @@ function App() {
 		    <About />
 		    <Counter />
 		    <Pricing />
+			<WhyUs />
 			<Auth open={open} setOpen={setOpen} active={active} setActive={setActive} />
 		    <ScrollToTop />
 	    </>
