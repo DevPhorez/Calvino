@@ -1,0 +1,44 @@
+.footer {
+    background-image: url('../../../public/Images/footer-bg.jpg.webp');
+    padding-top: 5rem;
+}
+
+.footer .container .row div:first-child p {
+    color: #5E5E5E;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.footer-social a svg {
+    transition: .2s;
+}
+
+.footer-social a:hover svg {
+    transform: rotateY(180deg);
+}
+
+.footer-list .header {
+    font-size: 20px;
+    color: #000;
+    padding-bottom: 1.8rem;
+}
+
+.footer-list li:not(.header) button {
+    cursor: pointer;
+    padding-bottom: 2px !important;
+    font-size: 14px;
+    color: #5E5E5E;
+    margin: 0;
+    margin-bottom: 1rem !important;
+}
+
+.number {
+    text-decoration: underline !important;
+    text-decoration-color: #8252fa !important;
+}
+
+@media screen and (max-width: 992px) {
+    .number {
+        font-size: 20px !important;
+    }
+}

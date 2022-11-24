@@ -2,8 +2,7 @@ import * as React from 'react'
 
 import './ScrollToTop.css'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { AiOutlineArrowUp } from 'react-icons/ai'
 
 import Scroll from 'react-scroll'
 
@@ -38,7 +37,7 @@ function ScrollToTop () {
 	
 	return (
 		<div ref={button} className={`button-parent scroll-to-top circle`} style={ { display: isVisible ? 'inline' : 'none' } }>
-			<button className='button' onClick={ BackToTop }><a className='d-flex align-items-center justify-content-center'><FontAwesomeIcon fontSize={24} icon={faArrowUp} /></a></button>
+			<button className='button' onClick={ BackToTop }><a className='d-flex align-items-center justify-content-center'><AiOutlineArrowUp fontSize={24} /></a></button>
 		</div>
 	)
 }

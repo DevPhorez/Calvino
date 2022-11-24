@@ -11,6 +11,7 @@ import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import Pricing from "./Components/Pricing/Pricing";
 import Auth from "./Components/Auth/Auth";
 import WhyUs from './Components/Why Us/WhyUs';
+import Footer from './Components/Footer/Footer';
 
 function App() {
 	
@@ -37,6 +38,7 @@ function App() {
 		    <Counter />
 		    <Pricing />
 			<WhyUs />
+			<Footer />
 			<Auth open={open} setOpen={setOpen} active={active} setActive={setActive} />
 		    <ScrollToTop />
 	    </>
