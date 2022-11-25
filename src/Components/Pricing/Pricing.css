@@ -13,6 +13,39 @@
 
 /* card css */
 
+.card-wrapper {
+    width: 100%;
+    perspective: 2000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container {
+    width: 285px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    color: #1d1f21;
+    position: relative;
+    background: rgba(255, 255, 255, 0.001);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.top-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1.2;
+    position: relative;
+    align-items: center;
+    padding: 1em 15px;
+}
+
 .card-icon {
     background: #fff;
     display: flex;
