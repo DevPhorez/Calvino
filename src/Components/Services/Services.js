@@ -17,12 +17,12 @@ function Services () {
 					</div>
 				</div>
 				<div className="row">
-					<div className='col-xl-3 col-lg-4 col-md-6 col-sm-6' data-aos='fade-right'>
-						<div className="single-card">
+					<div className='col-xl-3 col-lg-4 col-md-6 col-sm-6' data-aos='fade-up' data-aos-delay={0}>
+						<div className="single-card text-md-start text-center">
 							<h5 style={ { fontWeight: 700 } }>
 								Discover, Explore the Product
 							</h5>
-							<div className='service-icon' style={ { width: 80, height: 80 } }>
+							<div className='service-icon mx-md-0 mx-auto' style={ { width: 80, height: 80 } }>
 								<img style={ { width: 45 } } src="/Images/services1.svg" alt="service 1"/>
 							</div>
 							<p>
@@ -30,12 +30,12 @@ function Services () {
 							</p>
 						</div>
 					</div>
-					<div className='col-xl-3 col-lg-4 col-md-6 col-sm-6' data-aos='fade-up'>
-						<div className="single-card">
+					<div className='col-xl-3 col-lg-4 col-md-6 col-sm-6' data-aos='fade-up' data-aos-delay={300}>
+						<div className="single-card text-md-start text-center">
 							<h5 style={ { fontWeight: 700 } }>
 								Discover, Explore the Product
 							</h5>
-							<div className='service-icon' style={ { width: 80, height: 80 } }>
+							<div className='service-icon mx-md-0 mx-auto' style={ { width: 80, height: 80 } }>
 								<img style={ { width: 45 } } src="/Images/services2.svg" alt="service 1"/>
 							</div>
 							<p>
@@ -43,12 +43,12 @@ function Services () {
 							</p>
 						</div>
 					</div>
-					<div className='col-xl-3 col-lg-4 col-md-6 col-sm-6' data-aos='fade-up'>
-						<div className="single-card">
+					<div className='col-xl-3 col-lg-4 col-md-6 col-sm-6' data-aos='fade-up' data-aos-delay={600}>
+						<div className="single-card text-md-start text-center">
 							<h5 style={ { fontWeight: 700 } }>
 								Discover, Explore the Product
 							</h5>
-							<div className='service-icon' style={ { width: 80, height: 80 } }>
+							<div className='service-icon mx-md-0 mx-auto' style={ { width: 80, height: 80 } }>
 								<img style={ { width: 45 } } src="/Images/services3.svg" alt="service 1"/>
 							</div>
 							<p>
@@ -56,12 +56,12 @@ function Services () {
 							</p>
 						</div>
 					</div>
-					<div className='col-xl-3 col-lg-4 col-md-6 col-sm-6' data-aos='fade-left'>
-						<div className="single-card">
+					<div className='col-xl-3 col-lg-4 col-md-6 col-sm-6' data-aos='fade-up' data-aos-delay={900}>
+						<div className="single-card text-md-start text-center">
 							<h5 style={ { fontWeight: 700 } }>
 								Discover, Explore the Product
 							</h5>
-							<div className='service-icon' style={ { width: 80, height: 80 } }>
+							<div className='service-icon mx-md-0 mx-auto' style={ { width: 80, height: 80 } }>
 								<img style={ { width: 45 } } src="/Images/services3.svg" alt="service 1"/>
 							</div>
 							<p>

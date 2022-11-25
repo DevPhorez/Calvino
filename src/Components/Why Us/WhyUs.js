@@ -13,7 +13,7 @@ import './WhyUs.css'
 function WhyUs () {
     return (
         <section style={ { marginTop: '8rem' } }>
-            <div className="container">
+            <div className="container text-md-start text-center">
                 <div className="row border-bottom p-1 pb-4 mb-4">
                     <div className="col-12 col-lg-6 text-center text-lg-start">
                         <p className="text-primary">WHY CHOOSE US</p>
@@ -39,7 +39,7 @@ function WhyUs () {
 						            <p style={ { fontSize: 14 } }>Successfully <br/> completed projects</p>
 					            </div>
 				            </div>
-				            <div className="col-xl-5 col-lg-5 col-md-6 col-sm-5">
+				            <div className="col-xl-5 col-lg-5 col-md-6 col-sm-5 mb-md-0 mb-3">
 					            <div className="counter">
 						            <CountUp className='text-primary h1 fw-bold display-4' enableScrollSpy={true} end={860} duration={3} />
 					            </div>

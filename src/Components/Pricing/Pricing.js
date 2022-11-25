@@ -11,15 +11,22 @@ function Pricing () {
 	const [width, setWidth] = React.useState(window.innerWidth - 20)
 	const [height, setHeight] = React.useState(0)
 	
+	const [isMobile, setIsMobile] = React.useState(false)
+	
 	const pricing = React.useRef(null)
+	
 	
 	React.useEffect(() => {
 		setHeight(pricing.current.clientHeight)
+		
+		if (window.innerWidth < 768) {
+			setIsMobile(true)
+		} else if (window.innerWidth >= 768) {
+			setIsMobile(false)
+		}
+		
 	})
 	
-	function ChangeHeight () {
-		console.log(pricing.current.style.height)
-	}
 	
 	const particlesInit = async (main) => {
 		await loadFull(main);
@@ -28,7 +35,7 @@ function Pricing () {
 	const config = {
 		"particles": {
 			"number": {
-				"value": 80,
+				"value": isMobile ? (40) : (80),
 				"density": {
 					"enable": true,
 					"value_area": 700
@@ -138,7 +145,6 @@ function Pricing () {
 	
 	window.addEventListener('resize', () => {
 		setWidth(window.innerWidth - 20)
-		ChangeHeight()
 	})
 	
 	return (
