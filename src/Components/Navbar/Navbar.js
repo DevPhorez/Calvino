@@ -1,5 +1,6 @@
 import './Navbar.css'
 import * as React from "react";
+import MNavbar from "./Mobile Navbar/MNavbar";
 
 function Navbar({ modalSetOpen, modalSetActive }) {
 	
@@ -29,18 +30,24 @@ function Navbar({ modalSetOpen, modalSetActive }) {
 	window.addEventListener('scroll', ToggleStatus)
 	
 	return (
-		// <nav className="navbar navbar-expand-lg bg-transparent px-4 py-3 fixed-top">
 		<nav ref={navbar} className={`${ !status ? 'position-absolute w-100 bg-transparent' : 'shadow' } navbar navbar-expand-lg px-4 py-3`}>
 			<div className="container-fluid">
 				<span className="navbar-brand pointer">
-					<img src="/Images/logo.png" alt=""/>
-					<img src="/Images/site name.png" alt=""/>
+					<img src="/Images/logo.png" alt="logo"/>
+					<img src="/Images/site name.png" alt="Calvino"/>
 				</span>
-				<button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-				        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-				        aria-expanded="false" aria-label="Toggle navigation">
-					<span className="navbar-toggler-icon"></span>
-				</button>
+				
+				<MNavbar>
+					<div className="d-grid g-3">
+						<button className='button' onClick={() => { handleOpen(); modalSetActive('signup') }}>
+							<a>Sign Up</a>
+						</button>
+						<button className='button mt-2' onClick={() => { handleOpen(); modalSetActive('signup') }}>
+							<a>Sign In</a>
+						</button>
+					</div>
+				</MNavbar>
+				
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul className="navbar-nav header-items me-auto mb-2 mb-lg-0">
 						<li className="nav-item">
@@ -56,15 +63,11 @@ function Navbar({ modalSetOpen, modalSetActive }) {
 							<div className={ status && 'mb--25' }></div>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" aria-current="page" href="#">Case Study</a>
+							<a className="nav-link" aria-current="page" href="#">Pricing</a>
 							<div className={ status && 'mb--25' }></div>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" aria-current="page" href="#">Blog</a>
-							<div className={ status && 'mb--25' }></div>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" aria-current="page" href="#">Contact</a>
+							<a className="nav-link" aria-current="page" href="#">WhyUs</a>
 							<div className={ status && 'mb--25' }></div>
 						</li>
 					</ul>

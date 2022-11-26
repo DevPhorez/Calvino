@@ -1,0 +1,13 @@
+.drawer .container .m-navbar {
+    text-align: left;
+    list-style: none;
+}
+
+.drawer .container .m-navbar li {
+    padding: .7rem 1.2rem;
+    transition: .3s;
+}
+
+.drawer .container .m-navbar li:hover {
+    color: #8252fa;
+}
