@@ -7,14 +7,14 @@
 }
 
 .slider {
-  width: 77vw;
-  margin: 0 auto 2rem;
-  border: 1px solid #E8EEF3;
-  padding: 2rem 3rem;
-  user-select: none;
-  box-shadow: 0 15px 25px rgb(68 162 255 / 6%);
-  z-index: 5;
-  position: relative;
+    width: 77vw;
+    margin: 0 auto 2rem;
+    border: 1px solid #E8EEF3;
+    padding: 2rem 3rem;
+    user-select: none;
+    box-shadow: 0 15px 25px rgb(68 162 255 / 6%);
+    z-index: 5;
+    position: relative;
 }
 
 .slider::after {
@@ -32,34 +32,39 @@
     right: 0;
 }
 
+.mySwiper {
+    display: flex !important;
+    justify-content: center;
+}
+
 .swiper {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
 
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

@@ -165,7 +165,7 @@ function Pricing () {
 						<Card icon={'normal.svg'} title={'Normal'} guid={'For Small Company'} />
 					</div>
 					<div className="col-12 col-lg-4 mb-5">
-						<Card icon={'Pro.svg'} title={'Pro'} guid={'For Large Company'} />
+						<Card icon={'pro.svg'} title={'Pro'} guid={'For Large Company'} />
 					</div>
 				</div>
 			</div>

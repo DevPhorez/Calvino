@@ -6,7 +6,7 @@ import { Drawer } from "@mui/material";
 
 import { IoMdClose } from 'react-icons/io'
 
-function MNavbar ({ children }) {
+function MNavbar ({ ScrollToHandler, children }) {
 	
 	const [open, setOpen] = React.useState(false)
 	
@@ -15,6 +15,10 @@ function MNavbar ({ children }) {
 	}
 	
 	const button = React.useRef()
+	
+	function ScrollTo (position) {
+		ScrollToHandler(position)
+	}
 	
 	return (
 		<>
@@ -40,19 +44,38 @@ function MNavbar ({ children }) {
 					<IoMdClose fontSize={28} className='position-absolute top-0 end-0 m-4' onClick={ () => ToggleDrawer(false) } />
 					
 					<ul className="m-navbar mt-3">
-						<li>
-							<a className="nav-link" aria-current="page" href="#">Home</a>
+						<li onClick={ (event) => {
+							ScrollTo(0)
+							setOpen(false)
+						} }>
+							<a className="nav-link text-primary fw-bold" aria-current="page" href="#">Home</a>
 						</li>
-						<li>
+						
+						<li onClick={ (event) => {
+							ScrollTo(617)
+							setOpen(false)
+						} }>
 							<a className="nav-link" aria-current="page" href="#">Services</a>
 						</li>
-						<li>
+						
+						<li onClick={ (event) => {
+							ScrollTo(2369)
+							setOpen(false)
+						} }>
 							<a className="nav-link" aria-current="page" href="#">About</a>
 						</li>
-						<li>
+						
+						<li onClick={ (event) => {
+							ScrollTo(4517)
+							setOpen(false)
+						} }>
 							<a className="nav-link" aria-current="page" href="#">Pricing</a>
 						</li>
-						<li>
+						
+						<li onClick={ (event) => {
+							ScrollTo(6365)
+							setOpen(false)
+						} }>
 							<a className="nav-link" aria-current="page" href="#">WhyUs</a>
 						</li>
 					</ul>

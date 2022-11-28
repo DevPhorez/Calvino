@@ -56,7 +56,7 @@ function WhyUs () {
 						</div>
 		            </div>
 	            </div>
-				<div className="slider">
+				<div className="slider d-none d-md-block">
 					<Swiper
 						slidesPerView={5}
 						spaceBetween={70}
